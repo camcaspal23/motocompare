@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Moto Compare</string>
+    <string-array name="marcas">
+        <item>AKT</item>
+        <item>Yamaha</item>
+        <item>Kawasaki</item>
+        <item>KMT</item>
+    </string-array>
+    <string-array name="cilindrajes">
+        <item>125 CC</item>
+        <item>150 CC</item>
+        <item>180 CC</item>
+        <item>200 CC</item>
+        <item>250 CC</item>
+    </string-array>
+
 </resources>

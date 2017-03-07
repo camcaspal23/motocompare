@@ -31,7 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/button"
-            android:layout_weight="0.07" />
+            android:layout_weight="0.07"
+            android:onClick="soyPropietarioActivity" />
 
         <Button
             android:text="Estoy Buscando Moto"

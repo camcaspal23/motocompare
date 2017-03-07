@@ -15,16 +15,6 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:text="Usuario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView2"
-            android:layout_marginTop="80dp"
-            android:textSize="18sp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
-
-        <TextView
             android:text="Soy Propietario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,33 +26,168 @@
             android:textStyle="normal|bold"
             android:textAlignment="center" />
 
-        <EditText
-            android:layout_width="wrap_content"
+        <Spinner
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/editText"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_alignParentEnd="true"
-            android:hint="Escriba su nombre de usuario" />
+            android:id="@+id/spinner_marca"
+            android:layout_alignTop="@+id/marca"
+            android:layout_alignStart="@+id/editUsuario"
+            android:layout_toRightOf="@+id/marca"
+            />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_cilindraje"
+            android:layout_alignTop="@+id/cilindraje"
+            android:layout_alignStart="@+id/editUsuario"
+            android:layout_toRightOf="@+id/cilindraje"
+            />
 
         <TextView
             android:text="Marca"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_marginTop="27dp"
+            android:id="@+id/marca"
+            android:layout_marginTop="16dp"
             android:textSize="18sp"
-            android:layout_below="@+id/editText"
+            android:layout_below="@+id/editUsuario"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Cilindraje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cilindraje"
+            android:layout_marginTop="22dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/spinner_marca"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Categoría"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/categoria"
+            android:textSize="18sp"
+            android:layout_below="@+id/spinner_cilindraje"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_categoria"
+            android:layout_alignTop="@+id/categoria"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/spinner_cilindraje" />
+
+        <TextView
+            android:text="Modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/modelo"
+            android:textSize="18sp"
+            android:layout_marginTop="26dp"
+            android:layout_below="@+id/spinner_categoria"
             android:layout_alignParentStart="true" />
 
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/spinner"
-            android:layout_alignTop="@+id/textView3"
-            android:layout_alignStart="@+id/editText" />
+            android:id="@+id/spinner_modelo"
+            android:layout_alignBottom="@+id/modelo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/spinner_categoria" />
+
+        <TextView
+            android:text="Año"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ano"
+            android:textSize="18sp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/modelo"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Tipo de Motor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tipo_motor"
+            android:textSize="18sp"
+            android:layout_marginTop="21dp"
+            android:layout_below="@+id/ano"
+            android:layout_alignParentStart="true" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_tipo_motor"
+            android:layout_alignTop="@+id/tipo_motor"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editAno" />
+
+        <TextView
+            android:text="Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usuario"
+            android:layout_marginTop="21dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/color"
+            android:textSize="18sp"
+            android:layout_marginTop="22dp"
+            android:layout_below="@+id/spinner_tipo_motor"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editUsuario"
+            android:hint="Escriba su nombre de usuario"
+            android:layout_alignBaseline="@+id/usuario"
+            android:layout_alignBottom="@+id/usuario"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editAno"
+            android:hint="Escriba el año"
+            android:layout_alignBaseline="@+id/ano"
+            android:layout_alignBottom="@+id/ano"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editColor"
+            android:hint="Escriba el color"
+            android:layout_alignBaseline="@+id/color"
+            android:layout_alignBottom="@+id/color"
+            android:layout_alignStart="@+id/spinner_tipo_motor" />
+
+        <Button
+            android:text="Guardar Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/guardar_usuario" />
 
     </RelativeLayout>
 

@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SoyPropietario"></activity>
+        <activity android:name=".SoyPropietario" />
+        <activity android:name=".Evaluacion"></activity>
     </application>
 
 </manifest>
