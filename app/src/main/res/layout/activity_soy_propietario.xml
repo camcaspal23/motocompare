@@ -132,7 +132,7 @@
             android:text="Usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/usuario"
+            android:id="@+id/velocidad"
             android:layout_marginTop="21dp"
             android:textSize="18sp"
             android:layout_below="@+id/textView"
@@ -155,8 +155,8 @@
             android:ems="10"
             android:id="@+id/editUsuario"
             android:hint="Escriba su nombre de usuario"
-            android:layout_alignBaseline="@+id/usuario"
-            android:layout_alignBottom="@+id/usuario"
+            android:layout_alignBaseline="@+id/velocidad"
+            android:layout_alignBottom="@+id/velocidad"
             android:layout_alignParentEnd="true" />
 
         <EditText
@@ -187,7 +187,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/guardar_usuario" />
+            android:id="@+id/guardar_comentario"
+            android:onClick="evaluacionActivity" />
 
     </RelativeLayout>
 

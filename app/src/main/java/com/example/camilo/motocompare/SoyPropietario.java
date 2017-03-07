@@ -3,6 +3,7 @@ package com.example.camilo.motocompare;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
@@ -27,5 +28,11 @@ public class SoyPropietario extends AppCompatActivity {
         spinner_cilindraje.setAdapter(adapter_cilindraje);
 
         Intent intent = getIntent();
+    }
+
+    public void evaluacionActivity(View view) {
+        Intent intent2 = new Intent(this, Evaluacion.class);
+        startActivity(intent2);
+
     }
 }

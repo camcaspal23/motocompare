@@ -10,4 +10,140 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.camilo.motocompare.Evaluacion">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Velocidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/velocidad"
+            android:layout_marginTop="21dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Ahora por favor danos la evaluación de tu moto según las siguientes características:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarVelocidad"
+            android:layout_alignBottom="@+id/velocidad"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/velocidad" />
+
+        <TextView
+            android:text="Consumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/consumo"
+            android:layout_marginTop="24dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/velocidad"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarConsumo"
+            android:layout_alignBottom="@+id/consumo"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/velocidad" />
+
+        <TextView
+            android:text="Potencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/potencia"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/consumo"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar5"
+            android:layout_alignBottom="@+id/potencia"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/seekBarConsumo" />
+
+        <TextView
+            android:text="Frenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frenos"
+            android:layout_marginTop="35dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/potencia"
+            android:layout_alignParentStart="true" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarFrenos"
+            android:layout_alignBottom="@+id/frenos"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/seekBar5" />
+
+        <TextView
+            android:text="Curva"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEstCurva"
+            android:layout_marginTop="25dp"
+            android:textSize="18sp"
+            android:layout_below="@+id/frenos"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content" />
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarEstCurva"
+            android:layout_alignBottom="@+id/textViewEstCurva"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/seekBarFrenos" />
+
+        <TextView
+            android:text="Comentario"
+            android:layout_height="wrap_content"
+            android:id="@+id/comentario"
+            android:layout_marginTop="23dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/textViewEstCurva"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:text="Guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guardar_comentario"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editComentario"
+            android:layout_below="@+id/comentario"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/guardar_comentario"
+            android:hint="Escribe aquí tu comentario sobre la moto" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
