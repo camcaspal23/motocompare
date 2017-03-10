@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".SoyPropietario" />
-        <activity android:name=".Evaluacion"></activity>
+        <activity android:name=".Evaluacion" />
+        <activity
+            android:name=".MotoActivity"
+            android:label="@string/title_activity_moto"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
