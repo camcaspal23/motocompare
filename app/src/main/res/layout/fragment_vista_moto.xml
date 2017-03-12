@@ -1,13 +1,35 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.camilo.motocompare.VistaMotoFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cr522"
+            android:id="@+id/galeria" />
+
+        <TextView
+            android:text="Motor: Monocilíndrico 6500 rpm\nCilindraje: 180 cc\nArranque: Eléctrico\nFreno Delantero: Disco lobulado\nFreno Trasero: Tambor\nPeso Seco: 125 kg\nCaja de velocidades:	6 cambios manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/descripcion"
+            android:layout_margin="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cr5vid"
+            android:id="@+id/video" />
+
+    </LinearLayout>
 </FrameLayout>

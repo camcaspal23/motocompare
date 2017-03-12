@@ -146,7 +146,7 @@ public class MotoActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "HOME";
+                    return "MOTO";
                 case 1:
                     return "COMENTARIOS";
                 case 2:

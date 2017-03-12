@@ -5,9 +5,38 @@
     tools:context="com.example.camilo.motocompare.ComentariosFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:weightSum="1">
+
+        <TextView
+            android:text="Camilo_Cr5\nMe ha gustado mucho, recomendada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:background="@android:color/holo_green_light"
+            android:layout_margin="20dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textAlignment="textStart"
+            android:padding="20dp" />
+
+        <TextView
+            android:text="Sebastian_Cr5\nPor la marca, los componentes se desgastan muy fácil y hay que estar comprando repuesta a toda hora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:background="@android:color/holo_red_dark"
+            android:layout_margin="20dp"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white"
+            android:textAlignment="textStart"
+            android:padding="20dp" />
+    </LinearLayout>
 
 </FrameLayout>

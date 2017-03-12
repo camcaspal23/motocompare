@@ -5,21 +5,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+public class BuscandoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void soyPropietarioActivity(View view) {
-        Intent intent = new Intent(this, SoyPropietario.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_buscando);
     }
 
     public void buscandoActivity(View view) {
-        Intent intent = new Intent(this, BuscandoActivity.class);
+        Intent intent = new Intent(this, MotoActivity.class);
         startActivity(intent);
+
     }
 }
